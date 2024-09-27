@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;STM_RGB_15/Core/Inc/ws2812.h&apos; to &apos;ws2812b.h&apos;" description="Rename resource &apos;ws2812.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/ws2812.h" name="ws2812b.h" stamp="1727460442537" updateReferences="true"/>
+</session>

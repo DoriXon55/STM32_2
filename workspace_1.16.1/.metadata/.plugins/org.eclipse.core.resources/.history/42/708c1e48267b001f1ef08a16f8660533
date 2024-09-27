@@ -1,0 +1,7 @@
+#pragma once
+#include <stdint.h>
+
+/*
+ * value - cyfra do wyświetlania
+ */
+void seg7_show_digit(uint32_t value);

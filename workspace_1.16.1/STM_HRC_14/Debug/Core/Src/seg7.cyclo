@@ -1,0 +1,4 @@
+../Core/Src/seg7.c:7:13:set_output	1
+../Core/Src/seg7.c:17:6:seg7_show	1
+../Core/Src/seg7.c:21:6:seg7_update	4
+../Core/Src/seg7.c:49:6:seg7_show_digit	2

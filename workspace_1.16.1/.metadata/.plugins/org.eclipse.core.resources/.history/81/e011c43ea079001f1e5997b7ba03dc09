@@ -1,0 +1,13 @@
+/*
+ * lps25hb.h
+ *
+ *  Created on: Sep 23, 2024
+ *      Author: doria
+ */
+
+#ifndef INC_LPS25HB_H_
+#define INC_LPS25HB_H_
+
+
+
+#endif /* INC_LPS25HB_H_ */
