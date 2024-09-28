@@ -1,0 +1,30 @@
+17:22:47 **** Incremental Build of configuration Debug for project STM_IRC_16 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:187:19: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  187 |                   printf("code = %02x\n", value);
+      |                   ^~~~~~
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:187:19: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  187 |                   printf("code = %02x\n", value);
+      |                   ^~~~~~
+../Core/Src/main.c:187:19: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "STM_IRC_16.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\doria\STM32CubeIDE\workspace_1.16.1\STM_IRC_16\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM_IRC_16.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM_IRC_16.elf
+ 
+arm-none-eabi-size  STM_IRC_16.elf 
+arm-none-eabi-objdump -h -S STM_IRC_16.elf  > "STM_IRC_16.list"
+   text	   data	    bss	    dec	    hex	filename
+  22256	    104	   2128	  24488	   5fa8	STM_IRC_16.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM_IRC_16.list
+ 
+
+17:22:49 Build Finished. 0 errors, 2 warnings. (took 1s.997ms)
+
